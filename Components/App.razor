@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#211033" />
     <meta name="description" content="A little purple universe made just for your birthday." />
     <base href="/" />
-    <HeadOutlet @rendermode="InteractiveServer" />
+    <HeadOutlet @rendermode="new InteractiveServerRenderMode(prerender: false)" />
     @* Page styling lives in Razor files; no CSS files are needed. *@
     <style>
         *, *::before, *::after { box-sizing: border-box; }
@@ -19,7 +19,7 @@
     </style>
 </head>
 <body>
-    <Routes @rendermode="InteractiveServer" />
+    <Routes @rendermode="new InteractiveServerRenderMode(prerender: false)" />
     <script src="birthday.js"></script>
     <script src="_framework/blazor.web.js"></script>
 </body>
