@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#211033" />
+    <meta name="description" content="A little purple universe made just for your birthday." />
+    <base href="/" />
+    <HeadOutlet @rendermode="InteractiveServer" />
+    @* Page styling lives in Razor files; no CSS files are needed. *@
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        html { color-scheme: dark; background: #160d24; }
+        body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        button, a { -webkit-tap-highlight-color: transparent; }
+        button { font: inherit; }
+        ::selection { background: #d7b8ff; color: #211033; }
+        :focus-visible { outline: 3px solid #f4ddff; outline-offset: 6px; }
+    </style>
+</head>
+<body>
+    <Routes @rendermode="InteractiveServer" />
+    <script src="birthday.js"></script>
+    <script src="_framework/blazor.web.js"></script>
+</body>
+</html>

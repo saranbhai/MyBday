@@ -1,0 +1,6 @@
+Place your picture in this folder and name it exactly myphoto.jpg.
+
+Reload the birthday page after adding the image. It will replace the heart
+illustration automatically. A portrait photo works especially well.
+
+Edit BirthdayMessage in Components/Pages/Home.razor to add your personal note.
